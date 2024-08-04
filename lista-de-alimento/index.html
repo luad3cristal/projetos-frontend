@@ -1,0 +1,37 @@
+<!-- 
+ 1. Setar um cardápio
+ 2. Permitir que o usuário escolha
+ 3. Somar os valores que o usuário escolheu e apresentar
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 1</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Cardápio</h2>
+    <ol id="lista">
+      <li id="1">Hamburguer - <b>R$ 7,00</b></li>
+      <li id="2">X-Burguer - <b>R$ 8,00</b></li>
+      <li id="3">Rangrão - <b>R$ 10,00</b></li>
+      <li id="4">Super Rangrão - <b>R$ 12,00</b></li>
+      <li id="5">Suco - <b>R$ 1,00</b></li>
+    </ol>
+
+    <section id="produto">
+      <input type="text" placeholder="Qual o nome?" id="nomeComida"/>
+      <input type="number" placeholder="Qual o valor?" id="valorComida" />
+      <button onclick="novoProduto()">Finalizar</button>
+    </section>
+
+    <button onclick="produto()" id="b1">Adicionar novo produto</button>
+
+    <p>Total: <b>R$ 38,00</b></p>
+    <script src="./script.js"></script>
+  </body>
+</html>

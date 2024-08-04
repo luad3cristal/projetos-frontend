@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+}
+
+#bg {
+  background: url("https://www.infomoney.com.br/wp-content/uploads/2024/08/2024-08-02T163221Z_1204730734_UP1EK8219XV2D_RTRMADP_3_OLYMPICS-2024-JUDO.jpg?fit=1280%2C910&quality=50&strip=all");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+  filter: blur(0px);
+}
+
+a {
+  position: fixed;
+  top: 10px;
+
+  font-size: 50px;
+  color: #fff;
+}
+
+#loading {
+  font-size: 50px;
+  color: #fff;
+}
