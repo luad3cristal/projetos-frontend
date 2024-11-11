@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: hsl(185, 75%, 39%);
+  --text-color: hsl(227, 10%, 46%);
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Kumbh Sans", sans-serif;
+}
