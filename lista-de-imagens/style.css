@@ -30,15 +30,13 @@ main article {
 
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 3px;
   padding: 15px;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  flex-wrap: wrap;
 }
 
 main article h3 {
@@ -65,4 +63,16 @@ main article p {
 
 .night {
   background-image: url("./assets/starry-night.png");
+}
+
+@media (max-width: 376px) {
+  body {
+    display: block;
+    padding: 0;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 20px;
+  }
 }
