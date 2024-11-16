@@ -39,39 +39,51 @@ main {
   align-items: center;
   justify-content: space-evenly;
 
-  text-align: center;
-
   position: relative;
 }
 
 main p {
-  width: 80%;
-
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+  position: absolute;
+  top: 10%;
 
   font-size: 14px;
   letter-spacing: 5px;
   color: var(--neon-green);
 }
 
-main h1 {
-  font-size: 26px;
-  font-weight: 800;
+main section {
+  display: flex;
+  align-items: center;
 
   color: white;
   width: 80%;
 }
 
+main section h1 {
+  font-size: 26px;
+  font-weight: 800;
+
+  text-align: center;
+  width: 100%;
+
+  transition: opacity 0.4s ease-in-out;
+  opacity: 1;
+}
+
+main section h1.hidden {
+  opacity: 0;
+}
+
 main .divisor {
+  position: absolute;
+  bottom: 14%;
+
   background-image: url("./assets/pattern-divider-desktop.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 80%;
   height: 6%;
-  margin-bottom: 10px;
 }
 
 main .dice {
