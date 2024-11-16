@@ -13,23 +13,21 @@ function checarString(texto) {
   return texto.split(" ").length;
 }
 
-function typewriterEffect(element, text, speed = 50) {
-  element.textContent = ""; // Limpa o conteúdo anterior
+function efeitoDeEscrita(element, text, speed = 50) {
+  element.textContent = "";
   let index = 0;
 
-  // Atualiza o texto letra por letra
   const interval = setInterval(() => {
     element.textContent += text[index];
     index++;
 
-    // Para o intervalo quando todas as letras forem exibidas
     if (index >= text.length) {
       clearInterval(interval);
     }
   }, speed);
 }
 
-function loadAdvice() {
+function carregarConselho() {
   advice.classList.add("hidden");
   texto.textContent = "";
 
@@ -37,9 +35,9 @@ function loadAdvice() {
     .getAdvice()
     .then((conselho) => {
       if (checarString(conselho.advice) > maxPalavras) {
-        return loadAdvice();
+        return carregarConselho();
       }
-      typewriterEffect(texto, `ADVICE #${conselho.id}`, 50);
+      efeitoDeEscrita(texto, `ADVICE #${conselho.id}`, 50);
       setTimeout(() => {
         advice.textContent = `"${conselho.advice}"`;
 
@@ -47,11 +45,10 @@ function loadAdvice() {
       }, 800);
     })
     .catch((error) => {
-      advice.textContent =
-        "Não foi possível carregar o conselho. Tente novamente.";
+      advice.textContent = "Não foi possível carregar o conselho. Tente novamente.";
       console.error("Erro ao carregar o conselho:", error);
     });
 }
 
-dado.addEventListener("click", loadAdvice);
-loadAdvice();
+dado.addEventListener("click", carregarConselho);
+carregarConselho();
