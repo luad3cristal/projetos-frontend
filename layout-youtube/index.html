@@ -1,16 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <title>Youtube Layout</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
 
-  
-  <script src="script.js"></script>  
-</body>
+    <title>Youtube Layout</title>
+  </head>
+  <body>
+    <section class="container">
+      <main>
+        <div class="image"></div>
+        <h3>Título do vídeo de destaque</h3>
+        <span>18 mil visualizações</span>
+        <div class="botoes">
+          <button>
+            <img src="./assets/thumbs-up-outline.svg" alt="" /> Like
+            <span></span>
+            <p id="qtd">124k</p>
+          </button>
+          <button>
+            <img src="./assets/thumbs-down-outline.svg" alt="" /> Dislike
+            <span></span>
+            <p id="qtd">124k</p>
+          </button>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maxime
+          harum quod mollitia unde iste reprehenderit ex soluta repudiandae
+          delectus distinctio ducimus tempora, minus adipisci iusto assumenda,
+          amet in consequuntur.
+        </p>
+      </main>
+      <aside>
+        <section class="propaganda image">
+          <p>propaganda</p>
+        </section>
+
+        <section class="video">
+          <div class="image"></div>
+          <div class="videoInfo">
+            <h3>Um titulo de vídeo grande</h3>
+            <span>Roberto Dias</span>
+            <span>23 mil visualizações</span>
+            <span>há 3 semanas</span>
+          </div>
+        </section>
+
+        <section class="video">
+          <div class="image"></div>
+          <div class="videoInfo">
+            <h3>Um titulo de vídeo grande</h3>
+            <span>Roberto Dias</span>
+            <span>23 mil visualizações</span>
+            <span>há 3 semanas</span>
+          </div>
+        </section>
+
+        <section class="video">
+          <div class="image"></div>
+          <div class="videoInfo">
+            <h3>Um titulo de vídeo grande</h3>
+            <span>Roberto Dias</span>
+            <span>23 mil visualizações</span>
+            <span>há 3 semanas</span>
+          </div>
+        </section>
+      </aside>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
 </html>
