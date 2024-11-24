@@ -77,12 +77,16 @@ main .botoes button {
   border-radius: 20px;
   border: 1px solid;
   height: 30px;
-  width: 150px;
+  width: 180px;
 }
 
 main .botoes button,
 main .botoes p {
   font-size: 16px;
+}
+
+main .botoes p {
+  width: 20%;
 }
 
 main .botoes button img {
