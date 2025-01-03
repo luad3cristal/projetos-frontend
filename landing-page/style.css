@@ -109,6 +109,150 @@ body {
   grid-area: about;
 }
 
+.transformation-post,
+.audience-post,
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px;
+}
+
+.content {
+  padding: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+
+  gap: 15px;
+}
+
+.content h2 {
+  font-size: 30px;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 150%;
+  width: 88%;
+  color: var(--very-dark-grayish-blue);
+}
+
+.content a {
+  width: 103px;
+
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  text-decoration: none;
+  color: var(--very-dark-desaturated-blue);
+  cursor: pointer;
+
+  position: relative;
+}
+
+.content a::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  z-index: -1;
+
+  width: 103px;
+  height: 6px;
+  border-radius: 10px;
+
+  background-color: #fdeeb8; /* Cor amarela */
+}
+
+.content a:hover::before {
+  background-color: var(--yellow);
+}
+
+.transformation-post .image-content {
+  background: url("./assets/desktop/image-transform.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.audience-post .content a::before {
+  background-color: #ffdad0;
+}
+
+.audience-post .content a:hover::before {
+  background-color: var(--soft-red);
+}
+
+.audience-post .image-content {
+  background: url("./assets/desktop/image-stand-out.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.graphic-post {
+  background: url("./assets/desktop/image-graphic-design.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding: 30px;
+  gap: 10px;
+
+  text-align: center;
+}
+
+.graphic-post h2 {
+  font-size: 30px;
+  color: var(--dark-desaturated-cyan);
+}
+
+.graphic-post p {
+  font-size: 18px;
+  line-height: 150%;
+
+  width: 55%;
+  color: var(--dark-desaturated-cyan);
+}
+
+.photography-post {
+  background: url("./assets/desktop/image-photography.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding: 30px;
+  gap: 10px;
+
+  text-align: center;
+}
+
+.photography-post h2 {
+  font-size: 30px;
+  color: var(--dark-blue);
+}
+
+.photography-post p {
+  font-size: 18px;
+  line-height: 150%;
+
+  width: 55%;
+  color: var(--dark-blue);
+}
+
 .services {
   grid-area: services;
 }
