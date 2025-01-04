@@ -256,8 +256,8 @@ body {
 .services {
   grid-area: services;
 
-  height: 600px;
-  padding: 100px 20px;
+  height: 700px;
+  padding: 120px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -316,6 +316,15 @@ body {
 
 .projects {
   grid-area: projects;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects img {
+  width: 379.9px;
 }
 
 .footer {
