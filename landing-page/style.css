@@ -81,12 +81,21 @@ body {
 
 .header-links ul li:nth-last-child(1) {
   color: black;
+  text-transform: uppercase;
 
   margin-left: -10px;
 
   background-color: var(--white);
   padding: 10px 20px;
   border-radius: 20px;
+
+  transition: color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.header-links ul li:nth-last-child(1):hover {
+  background-color: rgba(255, 255, 255, 0.280);
+  color: white;
 }
 
 .header-title {
@@ -359,4 +368,10 @@ body {
 
 .social-contacts {
   gap: 30px;
+}
+
+.footer ul li:hover,
+.footer svg:hover path {
+  color: white;
+  fill: white;
 }
