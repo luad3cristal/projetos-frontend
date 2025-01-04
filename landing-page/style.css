@@ -255,6 +255,63 @@ body {
 
 .services {
   grid-area: services;
+
+  height: 600px;
+  padding: 100px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.services h2 {
+  color: var(--dark-grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.clients {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.client {
+  width: 350px;
+  height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+
+.client img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.client p {
+  color: var(--very-dark-grayish-blue);
+}
+
+.client-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.client-details h3 {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 18px;
+}
+
+.client-details span {
+  color: var(--dark-grayish-blue);
+  font-size: 15px;
 }
 
 .projects {
