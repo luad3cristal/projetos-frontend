@@ -94,7 +94,7 @@ body {
 }
 
 .header-links ul li:nth-last-child(1):hover {
-  background-color: rgba(255, 255, 255, 0.280);
+  background-color: rgba(255, 255, 255, 0.28);
   color: white;
 }
 
@@ -108,6 +108,7 @@ body {
   font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 15px;
+  text-align: center;
 }
 
 .header-title img {
@@ -265,8 +266,9 @@ body {
 .services {
   grid-area: services;
 
-  height: 700px;
+  /* height: 700px; */
   padding: 120px 20px;
+  gap: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -277,6 +279,8 @@ body {
   color: var(--dark-grayish-blue);
   text-transform: uppercase;
   letter-spacing: 10px;
+  text-align: center;
+  line-height: 130%;
 }
 
 .clients {
@@ -285,6 +289,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 40px;
 }
 
 .client {
@@ -358,6 +363,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .footer ul li {
   cursor: pointer;
 }
@@ -374,4 +380,109 @@ body {
 .footer svg:hover path {
   color: white;
   fill: white;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .header-links ul {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    cursor: pointer;
+  }
+  .header {
+    background: url("./assets/mobile/image-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .content p,
+  .content a {
+    width: 100%;
+  }
+
+  .transformation-post {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .transformation-post .image-content {
+    content: url("./assets/mobile/image-transform.jpg");
+  }
+
+  .audience-post {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .audience-post .image-content {
+    content: url("./assets/mobile/image-stand-out.jpg");
+  }
+
+  .posts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .graphic-post,
+  .photography-post {
+    height: 500px;
+  }
+
+  .services {
+    padding: 60px 20px;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+  .projects img {
+    width: 100%;
+  }
+
+  .projects img:nth-child(1) {
+    content: url("./assets/mobile/image-gallery-milkbottles.jpg");
+  }
+  .projects img:nth-child(2) {
+    content: url("./assets/mobile/image-gallery-orange.jpg");
+  }
+  .projects img:nth-child(3) {
+    content: url("./assets/mobile/image-gallery-cone.jpg");
+  }
+  .projects img:nth-child(4) {
+    content: url("./assets/mobile/image-gallery-sugar-cubes.jpg");
+  }
+}
+
+@media (max-width: 375px) {
+  .graphic-post,
+  .photography-post {
+    height: 550px;
+
+    padding: 0 0 30px 30px;
+  }
+
+  .graphic-post {
+    background: url("./assets/mobile/image-graphic-design.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .graphic-post {
+    background: url("./assets/mobile/image-graphic-design.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
