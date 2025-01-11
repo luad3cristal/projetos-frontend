@@ -28,17 +28,27 @@
             <img src="./assets/logo.svg" alt="" />
           </div>
           <nav>
-            <div class="mobile" >
-              <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
-                  fill="#FFF"
-                  fill-rule="evenodd"
-                />
-              </svg>
+            <div class="mobile">
+              <button id="menu">
+                <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
+                    fill="#FFF"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="sidebar hidden">
+              <ul>
+                <li>About</li>
+                <li>Services</li>
+                <li>Projects</li>
+                <li>Contact</li>
+              </ul>
             </div>
 
-            <ul>
+            <ul class="website-links">
               <li>About</li>
               <li>Services</li>
               <li>Projects</li>
@@ -189,5 +199,7 @@
         </li>
       </ul>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
